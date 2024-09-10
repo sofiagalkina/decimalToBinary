@@ -21,12 +21,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("/assets/binary.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+/*
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+    pointer-events: none; 
+} 
+*/
+
+
 
 h1 {
   text-align: center;
   font-size: 2.3rem;
   margin: 20px 0;
+  color: #1b1b32;
 }
 
 .input-container {
@@ -36,6 +57,7 @@ h1 {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  color: #1b1b32;
 }
 
 .convert-btn {
@@ -83,3 +105,4 @@ h1 {
     max-width: 460px;
   }
 }
+
