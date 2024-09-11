@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/assets/binary.jpg");
+  background-image: url("assets/binary.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
