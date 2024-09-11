@@ -70,11 +70,7 @@ const checkUserInput = () => {
     return;
   }
 
-  if (inputInt === 5) {
-    showAnimation();
-    return;
-  }
-
+ 
   result.textContent = decimalToBinary(inputInt);
   numberInput.value = "";
 };

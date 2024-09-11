@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/assets/nexus-font/Nexus-ZV54m.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -7,24 +14,20 @@
 }
 
 :root {
-  --light-grey: #f5f6f7;
-  --dark-blue: #1b1b32;
-  --orange: #f1be32;
+  --font-black: #000000;
+  --dark-blue: #bebdbd;
+  --orange: #f6c746;
 }
 
 body {
   background-color: var(--dark-blue);
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'CustomFont', sans-serif;
   font-size: 18px;
   color: var(--light-grey);
   padding: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("assets/binary.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 /*
@@ -45,12 +48,13 @@ body::before {
 
 h1 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 3rem;
   margin: 20px 0;
-  color: #1b1b32;
+  color: var(--font-black);
 }
 
 .input-container {
+  font-size: 1.6rem;
   margin: 10px 0;
   display: flex;
   flex-direction: column;
@@ -65,6 +69,9 @@ h1 {
   cursor: pointer;
   border: none;
   padding: 4px;
+  font-size: 1rem;
+  font-family: 'CustomFont', sans-serif;
+
 }
 
 .number-input {
@@ -78,7 +85,7 @@ h1 {
   min-height: 80px;
   word-break: break-word;
   padding: 15px;
-  border: 5px solid var(--orange);
+  border: 3px solid var(--orange);
   font-size: 2rem;
   text-align: center;
 }
@@ -86,16 +93,21 @@ h1 {
 #animation-container {
   margin: auto;
   max-width: 300px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .animation-frame {
   margin: 250px auto 0;
   padding: 15px 10px;
-  border: 5px solid var(--orange);
+  border: 3px solid var(--orange);
   font-size: 1.2rem;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
+.disclaimer{
+  font-size: 1.2rem;
+}
 @media screen and (min-width: 500px) {
   .input-container {
     flex-direction: row;
