@@ -48,7 +48,7 @@ body::before {
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 20px 0;
   color: var(--font-black);
 }
@@ -116,5 +116,20 @@ h1 {
   #result {
     max-width: 460px;
   }
+
 }
 
+@media screen and (max-width: 760px){
+  body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    font-size: 3rem;
+  }
+
+  
+}
